@@ -66,7 +66,7 @@ The REST API performs CRUD operations on Student objects as described below.
 
     `GET /students?major=csc`
 
-    `http://localhost:8080/students/major=csc`
+    `http://localhost:8080/students?major=csc`
 
    
 ### Response
