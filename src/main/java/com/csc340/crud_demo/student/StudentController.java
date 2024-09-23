@@ -66,9 +66,9 @@ public class StudentController {
      *
      * @param studentId the unique Student Id.
      * @param student   the new update Student details.
-     * @return the updated list of Students.
+     * @return the updated Student object.
      */
-    @PutMapping("update/{studentId}")
+    @PutMapping("/update/{studentId}")
     public Student updateStudent(@PathVariable int studentId, @RequestBody Student student) {
         service.updateStudent(studentId, student);
         return service.getStudentById(studentId);
